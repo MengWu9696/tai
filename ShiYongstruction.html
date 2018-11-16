@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh-TW" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh-TW" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="zh-TW"> <!--<![endif]-->
+<head>
+    <title>TWCERT/CC 台灣電腦網路危機處理暨協調中心</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- CSS Global Compulsory -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="assets/css/headers/header-v6.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="assets/css/theme-colors/twcert-theme.css" id="style_color">
+    <link rel="stylesheet" href="assets/css/theme-skins/dark.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css?20170221">
+
+    <link href="assets/css/mainStyle.css" rel="stylesheet" />
+    <!--data table-->
+    <link rel="stylesheet" href="assets/plugins/jquery-datatables/jquery.dataTables.min.css">
+    <style>
+        tbody{
+            cursor: pointer;
+        }
+        .sky-form .inline-group{
+            margin: 0;
+        }
+        .textBlack{
+            color: black;
+        }
+        .row .sky-form{
+
+        }
+    </style>
+</head>
+<body class="header-fixed" style="overflow-x : hidden;">
+
+    <div id="loadingIcon" class="loadingIcon">
+        <i class="fa fa-spinner fa-spin loading-icon"></i>
+    </div>
+
+
+    <div class="wrapper">
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96087710-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+  (function() {
+    var cx = '017067422288213298262:o3a_hrj2ydm';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script>
+    var protocol=location.protocol;
+
+    if(protocol != "https:"){
+        //document.location.href="https://twcert.org.tw"+location.pathname+location.search;
+    }
+
+    </script>
+<!--=== Header v6 ===-->
+<div id="header-custom" class="header-v6 header-white-transparent header-sticky ">
+    <!-- Navbar -->
+    <div class="navbar mega-menu" role="navigation">
+        <div class="container">
+            <!-- Topbar -->
+            <ul class="list-inline pull-right hidden-xs hidden-sm">
+                <li class="hoverSelector">
+                    <i class="fa fa-globe"></i>
+                    <a href="#" onclick="lang_change()" title="切換為英文網頁">English</a>
+                    <div class="footer_social">
+                        <ul class="social-icons social-icons-color">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/twcertcc/" class="icon-custom rounded social_facebook" data-toggle="tooltip" data-placement="top" data-original-title="Facebook" title="移至本中心臉書粉絲頁(另開分頁)">facebook</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/channel/UCciZUJ_GR_LqXdQzdRV3dGw" class="icon-custom rounded social_youtube" data-toggle="tooltip" data-placement="top" data-original-title="Youtube" title="移至本中心Youtube影音平台(另開分頁)">youtube</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twcertcc.blogspot.tw/" class="icon-custom rounded social_blogger" data-toggle="tooltip" data-placement="top" data-original-title="Blogger" title="移至本中心部落格(另開分頁)">blogger</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/TWCERTCC" class="icon-custom rounded social_twitter" data-toggle="tooltip" data-placement="top" data-original-title="Twitter" title="移至本中心推特粉絲頁(另開分頁)">twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <!-- End Topbar -->
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="menu-container">
+                <ul id="header_menu" class="nav navbar-nav">
+                    <li id="header_1" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                           <font style="vertical-align: inherit;">关于我们</font>
+                       </a>
+                            <ul class="dropdown-menu" style="">
+                                <li>
+                                    <a href="ZhongXinbrief.html"><font style="vertical-align: inherit;">中心简介</font></a>
+                                </li>
+                                <li><a href="Huodongnotes.html"><font style="vertical-align: inherit;">活动纪事</font></a>
+                                </li>
+                                <li><a href="PGPKEY.html"><font style="vertical-align: inherit;">PGP KEY</font></a>
+                                </li>
+                                <li><a href="HeZuoparters.html"><font style="vertical-align: inherit;">合作伙伴</font></a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li id="header_2" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <font style="vertical-align: inherit;">资安情资</font>
+                        </a>
+                        <ul class="dropdown-menu" style="">
+                            <li><a href="ZiAnnews.html"><font style="vertical-align: inherit;">资安新闻</font></a>
+                            </li>
+                            <li><a href="HeQinevent.html"><font style="vertical-align: inherit;">骇侵事件</font></a>
+                            </li>
+                            <li><a href="LouDonginfo.html"><font style="vertical-align: inherit;">漏洞资讯</font></a>
+                            </li>
+                            <li><a href="ZIANactivity.html"><font style="vertical-align: inherit;">资安活动</font></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="header_3" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <font style="vertical-align: inherit;">资安通报</font>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="YiBaninform.html"><font style="vertical-align: inherit;">一般通报</font></a>
+                            </li>
+                            <li><a href="JinJieinform.html"><font style="vertical-align: inherit;">进阶通报</font></a>
+                            </li><li><a href="APIinform.html"><font style="vertical-align: inherit;">API通报</font></a>
+                            </li>
+                            <li><a href="ShiYongstruction.html"><font style="vertical-align: inherit;">使用说明及规范</font></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="header_5" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <font style="vertical-align: inherit;">民众服务</font>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="GongKaifile.html"><font style="vertical-align: inherit;">公开文件</font></a>
+                            </li>
+                            <li><a href="ZiAnschool.html"><font style="vertical-align: inherit;">资安学堂</font></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="header_6" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><font style="vertical-align: inherit;">资安资源</font>
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li>
+                            <a href="GuoNeigroup.html"><font style="vertical-align: inherit;">国内CERT组织</font></a>
+                        </li>
+                        <li><a href="GuoJigroup.html"><font style="vertical-align: inherit;">国际CERT组织</font></a>
+                        </li>
+                        <li><a href="WangLusource.html"><font style="vertical-align: inherit;">网路资源</font></a>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- Navbar Brand -->
+                <div class="navbar-brand">
+                    <a href="/Default.aspx">
+                        <img id="default-logo" class="default-logo" src="assets/img/twcertLogo.png" alt="首頁Logo">
+                        <img id="shrink-logo" class="shrink-logo" src="assets/img/twcertLogoB.png" alt="首頁Logo">
+                    </a>
+                </div>
+                <!-- ENd Navbar Brand -->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <div class="menu-container">
+                    <ul id="header_menu" class="nav navbar-nav">
+
+                        <!-- MENU -->
+
+                    </ul>
+                </div>
+            </div><!--/navbar-collapse-->
+        </div>
+    </div>
+    <!-- End Navbar -->
+</div>
+<!--=== End Header v6 ===-->
+<div class="container">
+    <!-- Modal -->
+    <div id="myModal_usage" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">使用方法</h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>1.  請以全半形空白、全半形逗點分隔多個關鍵字。</li>
+                        <li>2.  盡量不要輸入整句句子進行搜尋，可能會減少搜尋到的結果，<br>例如：<br>
+                                (O) 勒索病毒 WannaCry<br>
+                                (X) 一個叫做WannaCry的勒索病毒
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+        <div class="margin-bottom-10 hidden-xs hidden-sm"></div>
+            <div class="bg-color-light">
+                <div class="container content-sm">
+                    <!--=== Breadcrumbs ===-->
+                    <div class="breadcrumbs">
+                        <div class="container">
+                            <ul class="pull-left breadcrumb">
+                                 <li><a href="Default.html">首頁</a></li><li><a href="#">資安情資</a></li><li class="active">資安活動</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--=== End Breadcrumbs ===-->
+                    <!-- News v3 -->
+                    <div class="news-v3 bg-color-white margin-bottom-30">
+                        <!--<div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <img id="main_img" class="img-responsive full-width" src="" alt="">
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>-->
+                        <div class="news-v3-in">
+                            <div class="headline-center">
+                                <h2 id="page_title">使用說明與範疇</h2>
+                            </div>
+                            <div class="content">
+                                <div class="headline">
+                                    <h3> 一、資安事件通報服務個資告知事項：</h3>
+                                </div>
+                                <p>
+                                    台灣電腦網路危機處理暨協調中心（TWCERT/CC，下稱本中心）依個人資料保護法第8條規定，於營運期間與服務區域內，為提供線上資安事件通報服務並進行相關分析，而需蒐集通報聯絡人個人資料，故於蒐集個人資料前，依法告知下列事項。
+                                </p>
+                                <p>
+                                    若您未滿二十歲，應請法定代理人陪同，詳閱並同意下列內容。若您已使用本中心所提供之服務並提供相關個人資料，則視為您或您的法定代理人已詳閱並同意下列告知事項。
+                                </p>
+                                <ol>
+                                    <li>
+                                        本中心因(1)資(通)訊服務、(2)資通安全與管理及(3)調查、統計與研究分析，或其他與前述目的具有合理關聯之特定事宜，蒐集您的姓名、IP位址、聯絡方式及通報內容等個人資料。
+                                    </li>
+                                    <li>
+                                        本中心收受資安事件通報後，將轉知主管機關或權責單位處理，除應主管機關或有權調查機關之釐清通報資料來源要求以外，本中心不會向任何人員或機構揭露您的個人資料。您可依個人資料保護法之規定行使權利，向本中心就您提供的資料(1)查詢或請求閱覽、(2)請求補充或更正、(3)請求停止處理、利用或(4)請求刪除。(專線電話0800-885-066)
+                                    </li>
+                                    <li>
+                                        您可選擇是否提供個人資料，惟若(1)您不提供個人資料、(2)提供個人資料後請求刪除或停止處理利用而經本中心核准，抑或(3)本中心查覺有資料不實或難以確認您的身分真實性之情形，您將無法收到本中心之後續聯絡或相關通知。
+                                    </li>
+                                </ol>
+                                <p></p>
+                                <div class="headline">
+                                    <h3> 二、功能描述：</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2">
+                                        <img class="img-responsive full-width" src="assets/img/report.png" alt="流程圖">
+                                    </div>
+                                </div>
+                                <p></p>
+                                <div class="headline">
+                                    <h3> 三、功能介紹：</h3>
+                                </div>
+                                    <blockquote><strong>一般通報：</strong>
+                                        <p>至一般通報頁面，填寫所有詳細資料後送出，通報完成後會立即回傳該筆通報之「事件編號」，請自行牢記並保管「事件編號」以利未來查詢處制進度。</p>
+                                    </blockquote>
+                                    <blockquote><strong>API通報：</strong>
+                                        <p>說明API使用方式。透過程式介接API，進行資安通報及通報進度查詢。API中傳輸資料皆以JSON格式處理。</p>
+                                        <ul>
+                                            <li>資安通報：欄位包含key及網頁「一般通報」中欄位，通報完成後會立即回傳該筆通報之「事件編號」。</li>
+                                            <li>通報進度查詢：欄位包含key及網頁「通報進度查詢」中欄位，查詢完成後會立即回傳該筆事件編號之「通報進度」。</li>
+                                        </ul>
+                                        <p>API須綁定key才能進行上述功能，以免遭大量惡意攻擊。</p>
+                                    </blockquote>
+                                    <blockquote><strong>通報進度查詢：</strong>
+                                        <p>至通報進度查詢頁面，填寫事件編號後送出，查詢該筆資安事件目前處置進度及建議之措施。</p>
+                                    </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End News v3 -->
+                </div>
+            </div>
+            <!--=== Footer Version 1 ===-->
+<div class="footer-v1">
+    <div class="row">
+        <div class="col-md-3 contact">
+            <h3>聯絡我們</h3>
+            <p>免付費服務電話: 0800-885-066</p>
+            <p>服務電話: 03-4115387</p>
+        </div>
+        <div class="col-md-3 contact light" onclick="javascript: location.href = '/subpages/securityReport/normal.aspx';" style="cursor: pointer;">
+            <h3>資安通報</h3>
+            <p>02-23776418 (台北辦公室)</p>
+            <p>03-4115579 (桃園辦公室)</p>
+        </div>
+        <div class="col-md-3 contact">
+            <a href="mailto:twcert@cert.org.tw">
+                <h3>電子信箱</h3>
+                <p>twcert(at)cert.org.tw</p>
+            </a>
+        </div>
+        <div class="col-md-3 contact light" onclick="javascript: location.href = '/subpages/aboutus/pgp_key.aspx';" style="cursor: pointer;">
+            <h3>PGP KEY</h3>
+            <p>TWCERT/CC PGP Public Key</p>
+            <p>(Key ID : 0x1E9D1F1B)</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+
+            <div class="row">
+                <!-- About -->
+                <div class="col-md-6 md-margin-bottom-40 text-center">
+                    <a href="/Default.aspx"><img id="logo-footer" class="footer-logo" src="assets/img/twcertLogo.png" alt="頁尾Logo" width="200"></a>
+                </div>
+                <!-- End About -->
+
+                <!-- Social Share -->
+                <div class="col-md-6 md-margin-bottom-40">
+                    <!-- <div class="headline"><h2>社群網站</h2></div>
+                    <div class="footer_social">
+                        <ul class="social-icons social-icons-color">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/twcertcc/" class="icon-custom rounded social_facebook" data-toggle="tooltip" data-placement="top" data-original-title="Facebook" title="">facebook</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/channel/UCciZUJ_GR_LqXdQzdRV3dGw" class="icon-custom rounded social_youtube" data-toggle="tooltip" data-placement="top" data-original-title="Youtube" title="">youtube</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://twcertcc.blogspot.tw/" class="icon-custom rounded social_blogger" data-toggle="tooltip" data-placement="top" data-original-title="Blogger" title="">blogger</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/TWCERTCC" class="icon-custom rounded social_twitter" data-toggle="tooltip" data-placement="top" data-original-title="Twitter" title="">twitter</a>
+                            </li>
+                        </ul>
+                    </div> -->
+
+                    <!--<div>
+                        <label class="input">
+                            <i class="icon-append fa fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Email address">
+                            <b class="tooltip tooltip-bottom-right">Needed to verify your account</b>
+                        </label>
+                    </div>-->
+                    <div class="headline"><h2>每月電子報訂閱</h2></div>
+                    <div id="email_subscribe" class="input-group">
+                        <input title="email address" type="text" class="form-control" placeholder="Email address">
+                        <span class="input-group-btn">
+                                <button id="send_subscribe" class="btn-u" type="button">電子報訂閱</button>
+                        </span>
+                    </div>
+                </div>
+                <!-- End Social Share -->
+            </div>
+        </div>
+    </div><!--/footer-->
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Copyright &copy; TWCERT/CC 台灣電腦網路危機處理暨協調中心 1998-2017
+                        <a href="/private_policy.aspx">隱私權政策</a> |
+                        <a href="/term_of_services.aspx">使用說明</a> |
+                        <a href="/website_map.aspx">網站地圖</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div><!--/copyright-->
+</div>
+<div id="modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog  modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">電子報訂閱</h4>
+            </div>
+            <div class="modal-body">
+                <p id="subscribe_result">One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<script type="text/javascript">
+var api = {
+    url: 'http://192.168.1.3'
+};
+</script>
+<!--=== End Footer Version 1 ===-->
+        </div><!--/wrapper-->
+
+        <!-- JS Global Compulsory -->
+        <script src="assets/plugins/jquery/jquery.min.js"></script>
+        <script src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <!-- JS Implementing Plugins -->
+        <script src="assets/plugins/back-to-top.js"></script>
+        <script src="assets/plugins/smoothScroll.js"></script>
+        <script src="assets/plugins/jquery.parallax.js"></script>
+        <!-- JS Customization -->
+        <!-- <script type="text/javascript" src="assets/js/custom.js"></script> -->
+
+        <!-- JS Page Level -->
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
+        <!-- data table -->
+        <script type="text/javascript" src="assets/plugins/jquery-datatables/jquery.dataTables.min.js"></script>
+           <script type="text/javascript">
+            jQuery(document).ready(function () {
+                $("#header_securityReport").addClass('active');
+                App.init();
+                $('#header-custom').removeClass('header-sticky');
+                $('#header-custom').addClass('header-fix-top');
+                $('#header-custom').addClass('header-fixed-shrink');
+            })
+        </script>
+
+        <script type="text/javascript">
+            jQuery(document).ready(function () {
+                $("#header_securityReport").addClass('active');
+                App.init();
+                $('#header-custom').removeClass('header-sticky');
+                $('#header-custom').addClass('header-fix-top');
+                $('#header-custom').addClass('header-fixed-shrink');
+
+                $("#step1").show();
+                $("#step2").hide();
+                $("#step3").hide();
+
+
+
+                $("#step1_next").click(function(){
+                    $(".step1").removeClass("active");
+                    $(".step2").addClass("active");
+                    $("#step1").hide();
+                    $("#step2").show();
+                    $("#step3").hide();
+                    $( "body" ).scrollTop( 0 );
+                });
+                $("#step2_next").click(function(){
+                    $(".step2").removeClass("active");
+                    $(".step3").addClass("active");
+                    $("#step1").hide();
+                    $("#step2").hide();
+                    $("#step3").show();
+                    $( "body" ).scrollTop( 0 );
+                });
+                $("#step3_finish").click(function(){
+
+                });
+                $(".step1").click(function(){
+                    $("#step1").show();
+                    $("#step2").hide();
+                    $("#step3").hide();
+                });
+                $(".step2").click(function(){
+                    $("#step1").hide();
+                    $("#step2").show();
+                    $("#step3").hide();
+                });
+                $(".step3").click(function(){
+                    $("#step1").hide();
+                    $("#step2").hide();
+                    $("#step3").show();
+                });
+            });
+
+        </script>
+        <!--[if lt IE 9]>
+            <script src="../assets/plugins/respond.min.js"></script>
+            <script src="../assets/plugins/html5shiv.min.js"></script>
+            <script src="assets/plugins/placeholder-IE-fixes.js"></script>
+        <![endif]-->
+</body>
+</html>

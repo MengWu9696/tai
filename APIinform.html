@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh-TW" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh-TW" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="zh-TW"> <!--<![endif]-->
+<head>
+    <title>TWCERT/CC 台灣電腦網路危機處理暨協調中心</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex">
+    <!-- CSS Global Compulsory -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="assets/css/headers/header-v6.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="assets/css/theme-colors/twcert-theme.css" id="style_color">
+    <link rel="stylesheet" href="assets/css/theme-skins/dark.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <link href="assets/css/mainStyle.css" rel="stylesheet" />
+    <style>
+    </style>
+</head>
+<body class="header-fixed" style="overflow-x : hidden;">
+
+    <div id="loadingIcon" class="loadingIcon">
+        <i class="fa fa-spinner fa-spin loading-icon"></i>
+    </div>
+
+
+        <div class="wrapper">
+<!--=== Header v6 ===-->
+<div id="header-custom" class="header-v6 header-white-transparent header-sticky ">
+    <!-- Navbar -->
+    <div class="navbar mega-menu" role="navigation">
+        <div class="container">
+            <!-- Topbar -->
+            <ul class="list-inline pull-right hidden-xs hidden-sm">
+                <li class="hoverSelector">
+                    <i class="fa fa-globe"></i>
+                    <a href="#" onclick="lang_change()" title="切換為英文網頁">English</a>
+                    <div class="footer_social">
+                        <ul class="social-icons social-icons-color">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/twcertcc/" class="icon-custom rounded social_facebook" data-toggle="tooltip" data-placement="top" data-original-title="Facebook" title="移至本中心臉書粉絲頁(另開分頁)">facebook</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/channel/UCciZUJ_GR_LqXdQzdRV3dGw" class="icon-custom rounded social_youtube" data-toggle="tooltip" data-placement="top" data-original-title="Youtube" title="移至本中心Youtube影音平台(另開分頁)">youtube</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twcertcc.blogspot.tw/" class="icon-custom rounded social_blogger" data-toggle="tooltip" data-placement="top" data-original-title="Blogger" title="移至本中心部落格(另開分頁)">blogger</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/TWCERTCC" class="icon-custom rounded social_twitter" data-toggle="tooltip" data-placement="top" data-original-title="Twitter" title="移至本中心推特粉絲頁(另開分頁)">twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <!-- End Topbar -->
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="menu-container">
+                <ul id="header_menu" class="nav navbar-nav">
+                    <li id="header_1" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                           <font style="vertical-align: inherit;">关于我们</font>
+                       </a>
+                            <ul class="dropdown-menu" style="">
+                                <li>
+                                    <a href="ZhongXinbrief.html"><font style="vertical-align: inherit;">中心简介</font></a>
+                                </li>
+                                <li><a href="Huodongnotes.html"><font style="vertical-align: inherit;">活动纪事</font></a>
+                                </li>
+                                <li><a href="PGPKEY.html"><font style="vertical-align: inherit;">PGP KEY</font></a>
+                                </li>
+                                <li><a href="HeZuoparters.html"><font style="vertical-align: inherit;">合作伙伴</font></a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li id="header_2" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <font style="vertical-align: inherit;">资安情资</font>
+                        </a>
+                        <ul class="dropdown-menu" style="">
+                            <li><a href="ZiAnnews.html"><font style="vertical-align: inherit;">资安新闻</font></a>
+                            </li>
+                            <li><a href="HeQinevent.html"><font style="vertical-align: inherit;">骇侵事件</font></a>
+                            </li>
+                            <li><a href="LouDonginfo.html"><font style="vertical-align: inherit;">漏洞资讯</font></a>
+                            </li>
+                            <li><a href="ZIANactivity.html"><font style="vertical-align: inherit;">资安活动</font></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="header_3" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <font style="vertical-align: inherit;">资安通报</font>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="YiBaninform.html"><font style="vertical-align: inherit;">一般通报</font></a>
+                            </li>
+                            <li><a href="JinJieinform.html"><font style="vertical-align: inherit;">进阶通报</font></a>
+                            </li><li><a href="APIinform.html"><font style="vertical-align: inherit;">API通报</font></a>
+                            </li>
+                            <li><a href="ShiYongstruction.html"><font style="vertical-align: inherit;">使用说明及规范</font></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="header_5" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <font style="vertical-align: inherit;">民众服务</font>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="GongKaifile.html"><font style="vertical-align: inherit;">公开文件</font></a>
+                            </li>
+                            <li><a href="ZiAnschool.html"><font style="vertical-align: inherit;">资安学堂</font></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="header_6" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><font style="vertical-align: inherit;">资安资源</font>
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li>
+                            <a href="GuoNeigroup.html"><font style="vertical-align: inherit;">国内CERT组织</font></a>
+                        </li>
+                        <li><a href="GuoJigroup.html"><font style="vertical-align: inherit;">国际CERT组织</font></a>
+                        </li>
+                        <li><a href="WangLusource.html"><font style="vertical-align: inherit;">网路资源</font></a>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- Navbar Brand -->
+                <div class="navbar-brand">
+                    <a href="/Default.aspx">
+                        <img id="default-logo" class="default-logo" src="assets/img/twcertLogo.png" alt="首頁Logo">
+                        <img id="shrink-logo" class="shrink-logo" src="assets/img/twcertLogoB.png" alt="首頁Logo">
+                    </a>
+                </div>
+                <!-- End Header Inner Right -->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <div class="menu-container">
+                    <ul id="header_menu" class="nav navbar-nav">
+
+                        <!-- MENU -->
+
+                    </ul>
+                </div>
+            </div><!--/navbar-collapse-->
+        </div>
+    </div>
+    <!-- End Navbar -->
+</div>
+<!--=== End Header v6 ===-->
+<div class="container">
+
+    <!-- Modal -->
+    <div id="myModal_usage" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">使用方法</h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>1.  請以全半形空白、全半形逗點分隔多個關鍵字。</li>
+                        <li>2.  盡量不要輸入整句句子進行搜尋，可能會減少搜尋到的結果，<br>例如：<br>
+                                (O) 勒索病毒 WannaCry<br>
+                                (X) 一個叫做WannaCry的勒索病毒
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+            <div class="margin-bottom-10 hidden-xs hidden-sm"></div>
+            <div class="bg-color-light">
+                <div class="container content-sm">
+                    <!--=== Breadcrumbs ===-->
+                    <div class="breadcrumbs">
+                        <div class="container">
+                            <ul class="pull-left breadcrumb">
+                                 <li><a href="Default.html">首頁</a></li><li><a href="#">資安情資</a></li><li class="active">資安活動</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--=== End Breadcrumbs ===-->
+                    <!-- News v3 -->
+                    <div class="news-v3 bg-color-white margin-bottom-30">
+                        <div class="news-v3-in">
+                            <div class="headline-center">
+                                <h2 id="page_title">API通報</h2>
+                            </div>
+                            <div>
+                                <a onclick="Goto('anchor_api_introduce')" href="##anchor_api_introduce" class="btn btn-u">API介紹</a>
+                                <a onclick="Goto('anchor_api_apply_method')" href="##anchor_api_apply_method" class="btn btn-u">金鑰申請方式</a>
+                                <a onclick="Goto('anchor_api_request')" href="##anchor_api_request" class="btn btn-u">API Request</a>
+                                <a onclick="Goto('anchor_api_response')" href="##anchor_api_response" class="btn btn-u">API Response</a>
+                                <a onclick="Goto('anchor_api_type_map')" href="##anchor_api_type_map" class="btn btn-u">分類對照表</a>
+                                <a onclick="Goto('anchor_api_event_risk')" href="##anchor_api_event_risk" class="btn btn-u">事件風險等級參考</a>
+                                <a onclick="Goto('anchor_api_example_http')" href="##anchor_api_example_http" class="btn btn-u">Example HTTP</a>
+                                <a onclick="Goto('anchor_api_example_curl')" href="##anchor_api_example_curl" class="btn btn-u">Example cURL</a>
+                            </div>
+                            <div class="content" style="text-align: left; word-wrap: break-word;" id="showApi">
+                                <div class="headline">
+                                    <h3 id="anchor_api_introduce"> API介紹：</h3>
+                                </div>
+                                <p class="summary">本中心提供以API方式進行資安通報，分為事件通報及通報進度查詢兩種功能，以利大量及快速進行通報並掌握通報進度。本API之回傳結果皆以JSON格式呈現。<br /></p>
+                                <div class="headline">
+                                    <h3 id="anchor_api_apply_method"> 金鑰申請方式：</h3>
+                                </div>
+                                <p class="summary">使用API進行資安通報或查詢通報進度，必須在API參數內使用金鑰以有效操作API，若欲申請金鑰，請先來信至twcert@cert.org.tw，主旨為「申請資安通報API金鑰-您的姓名」，例如「申請資安通報API金鑰-王大明」，並提供姓名、單位及可連絡Email等資訊。本中心在收到您的申請資料後會進行審核，通過後會提供一組金鑰給您，請注意不要任意將此金鑰外流，若偵測到異常連線，本中心有權停止您對該組金鑰的使用權。<br /></p>
+                                <div class="headline">
+                                    <h3 id="anchor_api_request"> API Request</h3>
+                                </div>
+                                <p class="summary">
+                                    URL: https://twcert.org.tw/api/report.php<br />
+                                    METHOD: POST<br />
+                                    <style>
+                                        tr th{
+                                            background: #757575; border: 0; border-top: 1px solid #e0e0e0; color: #fff;padding: 7px 8px 8px;
+                                        }
+                                        tr td{
+                                            background: #f7f7f7;
+                                            vertical-align: top;color: #212121;
+                                            padding: 7px 8px 8px;
+                                        }
+                                    </style>
+                                    <table id="api_request">
+                                        <tr>
+                                            <th>
+                                                參數
+                                            </th>
+                                            <th>
+                                                參數說明
+                                            </th>
+                                            <th>
+                                                選擇性
+                                            </th>
+                                            <th>
+                                                資料型態
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td>key</td>
+                                            <td>
+                                                TWCERT/CC發給您的金鑰
+                                            </td>
+                                            <td>
+                                                必填
+                                            </td>
+                                            <td>String</td>
+                                        </tr>
+                                        <tr>
+                                            <td>contact_pu</td>
+                                            <td>
+                                                通報人（機關）
+                                            </td>
+                                            <td>
+                                                必填
+                                            </td>
+                                            <td>String</td>
+                                        </tr>
+                                        <tr>
+                                            <td>phone</td>
+                                            <td>
+                                                聯絡電話
+                                            </td>
+                                            <td>
+                                                必填
+                                            </td>
+                                            <td>String</td>
+                                        </tr>
+                                        <tr>
+                                            <td>email</td>
+                                            <td>
+                                                電子郵件
+                                            </td>
+                                            <td>
+                                                必填
+                                            </td>
+                                            <td>String</td>
+                                        </tr>
+                                        <!-- <tr>
+                                            <td>discoverydate</td>
+                                            <td>
+                                                事件發生時間 Ex: 05/22/2017 10:53 AM
+                                            </td>
+                                            <td>
+                                                必填
+                                            </td>
+                                        </tr> -->
+                                        <!-- <tr>
+                                            <td>area</td>
+                                            <td>
+                                                地區
+                                            </td>
+                                            <td>
+                                                必填
+                                            </td>
+                                        </tr> -->
+                                        <tr>
+                                            <td>ip</td>
+                                            <td>
+                                                IP位置<br>
+                                                Ex: [{
+                                                    "ip": "123.123.123.123",
+                                                    "port": "80",
+                                                    "port_description": "web host"
+                                                }]
+                                                <ul>
+                                                    <li>ip => 必填(ip)</li>
+                                                    <li>port => 必填(port)</li>
+                                                    <li>port_description => 必填(port說明)</li>
+                                                </ul>
+                                                ※如果無值，可給空陣列，不知道Port請給0。
+                                            </td>
+                                            <td>
+                                                必填
+                                            </td>
+                                            <td>Array</td>
+                                        </tr>
+                                        <tr>
+                                            <td>web_url</td>
+                                            <td>
+                                                網際網路位置 <br>Ex: ["https://twcert.org.tw", "https://www.twcert.org.tw"]
+                                                <br>※如果無值，可給空陣列。
+                                            </td>
+                                            <td>
+                                                必填
+                                            </td>
+                                            <td>Array</td>
+                                        </tr>
+                                        <tr>
+                                            <td>discover_date</td>
+                                            <td>
+                                                發生時間 <br>Ex: "1995-05-15 23:15:15"
+                                            </td>
+                                            <td>
+                                                選填
+                                            </td>
+                                            <td>String</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>model</td>
+                                            <td>
+                                                設備廠牌、型號
+                                            </td>
+                                            <td>
+                                                選填
+                                            </td>
+                                            <td>String</td>
+                                        </tr>
+                                        <!-- <tr>
+                                            <td>os_type</td>
+                                            <td>
+                                                作業系統名稱、版本
+                                            </td>
+                                            <td>
+                                                選填
+                                            </td>
+                                        </tr> -->
+                                        <tr>
+                                            <td>fire_wall</td>
+                                            <td>
+                                                防火牆
+                                            </td>
+                                            <td>
+                                                選填
+                                            </td>
+                                            <td>String</td>
+                                        </tr>
+                                        <tr>
+                                            <td>anti_virus</td>
+                                            <td>
+                                                防毒軟體
+                                            </td>
+                                            <td>
+                                                選填
+                                            </td>
+                                            <td>String</td>
+                                        </tr>
+                                        <tr>
+                                            <td>detected_system</td>
+                                            <td>
+                                                入侵偵測系統
+                                            </td>
+                                            <td>
+                                                選填
+                                            </td>
+                                            <td>String</td>
+                                        </tr>
+                                        <tr>
+                                            <td>defend_system</td>
+                                            <td>
+                                                入侵防禦系統
+                                            </td>
+                                            <td>
+                                                選填
+                                            </td>
+                                            <td>String</td>
+                                        </tr>
+                                        <tr>
+                                            <td>others</td>
+                                            <td>
+                                                其他
+                                            </td>
+                                            <td>
+                                                選填
+                                            </td>
+                                            <td>String</td>
+                                        </tr>
+                                        <!-- <tr>
+                                            <td>security_monitoring_center</td>
+                                            <td>
+                                                資安監控中心
+                                            </td>
+                                            <td>
+                                                選填
+                                            </td>
+                                        </tr> -->
+                                        <!-- <tr>
+                                            <td>security_maintenance_manufacturers</td>
+                                            <td>
+                                                資安維護廠商
+                                            </td>
+                                            <td>
+                                                選填
+                                            </td>
+                                        </tr> -->
+                                        <!-- <tr>
+                                            <td>security_management_certification</td>
+                                            <td>
+                                                受害系統是否通過資安管理認證
+                                            </td>
+                                            <td>
+                                                選填
+                                            </td>
+                                        </tr> -->
+                                        <tr>
+                                            <td>confidential_impact</td>
+                                            <td>
+                                                機密性衝擊
+                                                <br>Ex: 4, 代碼請參考事件風險等級參考表。
+                                            </td>
+                                            <td>
+                                                必填
+                                            </td>
+                                            <td>Integer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>integrity_impact</td>
+                                            <td>
+                                                完整性衝擊
+                                                <br>Ex: 4, 代碼請參考事件風險等級參考表。
+                                            </td>
+                                            <td>
+                                                必填
+                                            </td>
+                                            <td>Integer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>usability_impact</td>
+                                            <td>
+                                                可用性衝擊
+                                                <br>Ex: 4, 代碼請參考事件風險等級參考表。
+                                            </td>
+                                            <td>
+                                                必填
+                                            </td>
+                                            <td>Integer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>cross_unit_impact</td>
+                                            <td>
+                                                跨單位衝擊
+                                                <br>Ex: 4, 代碼請參考事件風險等級參考表。
+                                            </td>
+                                            <td>
+                                                必填
+                                            </td>
+                                            <td>Integer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>event_classification</td>
+                                            <td>
+                                                事件分類
+                                                <br>Ex: "A01", 代碼請參考分類對照表。
+                                            </td>
+                                            <td>
+                                                必填
+                                            </td>
+                                            <td>String</td>
+                                        </tr>
+                                        <tr>
+                                            <td>event_description</td>
+                                            <td>
+                                                事件說明
+                                            </td>
+                                            <td>
+                                                必填
+                                            </td>
+                                            <td>String</td>
+                                        </tr>
+                                        <tr>
+                                            <td>contingency_measures</td>
+                                            <td>
+                                                應變措施
+                                            </td>
+                                            <td>
+                                                必填
+                                            </td>
+                                            <td>String</td>
+                                        </tr>
+                                    </table>
+                                    <br />
+                                    <!--<b>測試範例(windows):</b><br />
+                                    curl -H "Content-type: application/json; charset=BIG5" -X POST -d "{\"anti_virus\":\"test\",\"area\":\"test\",\"confidential_impact\":\"4\",\"contact_pu\":\"test\",\"contingency_measures\":\"test\",\"cross_unit_impact\":\"4\",\"defend_system\":\"setset\",\"detected_system\":\"tet\",\"discoverydate\":\"04/10/2017 1:01 PM\",\"email\":\"stest\",\"event_classification\":\"000\",\"event_description\":\"test\",\"fire_wall\":\"test\",\"integrity_impact\":\"4\",\"ip\":\"test\",\"model\":\"test\",\"os_type\":\"etest\",\"others\":\"test\",\"phone\":\"test\",\"security_maintenance_manufacturers\":\"test\",\"security_management_certification\":\"1\",\"security_monitoring_center\":\"無\",\"usability_impact\":\"4\",\"web_url\":\"test\"}" -H "Authorization: Bearer your_access_token" http://192.168.1.3/api/api_report
+                                   <br /><br /><b>測試範例(linux):</b><br />
+                                    curl -H "Content-type: application/json; charset=BIG5" -X POST -d '{"anti_virus":"test","area":"test","confidential_impact":"4","contact_pu":"test","contingency_measures":"test","cross_unit_impact":"4","defend_system":"setset","detected_system":"tet","discoverydate":"04/10/2017 1:01 PM","email":"stest","event_classification":"000","event_description":"test","fire_wall":"test","integrity_impact":"4","ip":"test","model":"test","os_type":"etest","others":"test","phone":"test","security_maintenance_manufacturers":"test","security_management_certification":"1","security_monitoring_center":"無","usability_impact":"4","web_url":"test"}' -H "Authorization: Bearer your_access_token" http://192.168.1.3/api/api_report
+                                    -->
+                                </p>
+                                <div class="headline">
+                                    <h3 id="anchor_api_response"> API Response</h3>
+                                </div>
+                                <p class="summary" style="background: #f7f7f7;vertical-align: top;color: #212121; padding: 7px 8px 8px;">
+                                    {<br />
+                                    　<span style="color: #0d904f;">"status"</span>: <span style="color:#3b78e7;">"success | failure"</span>, <br />
+                                    　<span style="color: #0d904f;">"no"</span>: <span style="color:#3b78e7;">"您的事件編號"</span>, <br />
+                                    　<span style="color: #0d904f;">"error-codes"</span>: <span style="color:#3b78e7;">"description"</span> <br />
+                                    }<br />
+                                </p>
+
+                                <div class="headline">
+                                    <h3 id="anchor_api_type_map"> 分類對照表</h3>
+                                </div>
+                                <p class="summary">
+                                    <table id="api_type_map_p_table">
+                                        <tr>
+                                            <th>代碼</th>
+                                            <th>分類</th>
+                                            <th>子分類</th>
+                                        </tr>
+                                    </table>
+                                </p>
+                                <div class="headline">
+                                    <h3 id="anchor_api_event_risk"> 事件風險等級參考</h3>
+                                </div>
+                                <p class="summary">
+                                    <table>
+                                        <tr><th>資安事件造成影響</th><th>分數</th></tr>
+                                        <tr><td colspan="2"><b>機密性衝擊</b></td></tr>
+                                        <tr><td>國家機密資料遭洩漏</td><td>4</td></tr>
+                                        <tr><td>密級或敏感業務資料遭洩漏</td><td>3</td></tr>
+                                        <tr><td>非屬密級或敏感之核心業務資料遭洩漏</td><td>2</td></tr>
+                                        <tr><td>非核心業務資料遭洩漏</td><td>1</td></tr>
+                                        <tr><td>無業務系統或資料遭竄改</td><td>0</td></tr>
+                                        <tr><td colspan="2">　</td></tr>
+                                        <tr><td colspan="2"><b>完整性衝擊</b></td></tr>
+                                        <tr><td>國家重要資訊基礎建設系統或資料遭竄改</td><td>4</td></tr>
+                                        <tr><td>核心業務系統或資料遭嚴重竄改</td><td>3</td></tr>
+                                        <tr><td>核心業務系統或資料遭輕微竄改</td><td>2</td></tr>
+                                        <tr><td>非核心業務系統或資料遭竄改</td><td>1</td></tr>
+                                        <tr><td>無業務系統或資料遭竄改</td><td>0</td></tr>
+                                        <tr><td colspan="2">　</td></tr>
+                                        <tr><td colspan="2"><b>可用性衝擊</b></td></tr>
+                                        <tr><td>國家重要資訊基礎建設運作遭影響或系統停頓，無法於可容忍中斷時間內回復正常運作</td><td>4</td></tr>
+                                        <tr><td>核心業務運作遭影響或系統停頓，無法於可容忍中斷時間內回復正常運作</td><td>3</td></tr>
+                                        <tr><td>核心業務運作遭影響或系統效率降低，於可容忍中斷時間內回復正常運作</td><td>2</td></tr>
+                                        <tr><td>非核心業務運作遭影響或短暫停頓</td><td>1</td></tr>
+                                        <tr><td>無業務運作受影響</td><td>0</td></tr>
+                                        <tr><td colspan="2">　</td></tr>
+                                        <tr><td colspan="2"><b>跨單位衝擊</b></td></tr>
+                                        <tr><td>衝擊之單位影響國家重要資訊基礎建設系統</td><td>4</td></tr>
+                                        <tr><td>衝擊之單位影響嚴重核心業務系統</td><td>3</td></tr>
+                                        <tr><td>衝擊之單位影響輕微核心業務系統</td><td>2</td></tr>
+                                        <tr><td>衝擊之單位影響非核心業務系統</td><td>1</td></tr>
+                                        <tr><td>無跨單位受影響</td><td>0</td></tr>
+                                    </table>
+                                </p>
+
+                                <div class="headline">
+                                    <h3 id="anchor_api_example_http"> Example HTTP</h3>
+                                </div>
+                                <p class="summary">
+                                    <pre>
+POST /api/report.php HTTP/1.1
+Host: host_url
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+    "type":"api",
+    "contact_pu":"小明",
+    "phone":"02-1234567",
+    "email":"your email",
+    "ip":[
+        {
+            "ip": "192.168.15.15",
+            "port": "80",
+            "port_description": "123"
+        },
+        {
+            "ip": "192.168.15.15",
+            "port": "80",
+            "port_description": "123"
+        },
+        {
+            "ip": "192.168.15.15",
+            "port": "80",
+            "port_description": "123"
+        }
+    ],
+    "web_url":["https://twcert.org.tw"],
+    "discover_date": "discover_date",
+    "event_description":"test",
+    "key": "your key",
+    "model": "model",
+    "fire_wall":"fire_wall",
+    "anti_virus":"anti_virus",
+    "detected_system":"detected_system",
+    "defend_system":"defend_system",
+    "others":"others",
+    "confidential_impact": 1,
+    "integrity_impact": 1,
+    "usability_impact": 1,
+    "cross_unit_impact": 1,
+    "event_classification": "A01",
+    "contingency_measures": "contingency_measures"
+}
+                                    </pre>
+                                </p>
+                                <div class="headline">
+                                    <h3 id="anchor_api_example_curl"> Example cURL</h3>
+                                </div>
+                                <p class="summary">
+                                    <pre>
+curl -X POST \
+  https://host_url/api/report.php \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+    "type":"api",
+    "contact_pu":"小明",
+    "phone":"02-1234567",
+    "email":"your email",
+    "ip":[
+        {
+            "ip": "192.168.15.15",
+            "port": "80",
+            "port_description": "123"
+        },
+        {
+            "ip": "192.168.15.15",
+            "port": "80",
+            "port_description": "123"
+        },
+        {
+            "ip": "192.168.15.15",
+            "port": "80",
+            "port_description": "123"
+        }
+    ],
+    "web_url":["https://twcert.org.tw"],
+    "discover_date": "discover_date",
+    "event_description":"test",
+    "key": "your key",
+    "model": "model",
+    "fire_wall":"fire_wall",
+    "anti_virus":"anti_virus",
+    "detected_system":"detected_system",
+    "defend_system":"defend_system",
+    "others":"others",
+    "confidential_impact": 1,
+    "integrity_impact": 1,
+    "usability_impact": 1,
+    "cross_unit_impact": 1,
+    "event_classification": "A01",
+    "contingency_measures": "contingency_measures"
+}'
+                                    </pre>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End News v3 -->
+                </div>
+            </div>
+            <!--=== Footer Version 1 ===-->
+<div class="footer-v1">
+    <div class="row">
+        <div class="col-md-3 contact">
+            <h3>聯絡我們</h3>
+            <p>免付費服務電話: 0800-885-066</p>
+            <p>服務電話: 03-4115387</p>
+        </div>
+        <div class="col-md-3 contact light" onclick="javascript: location.href = '/subpages/securityReport/normal.aspx';" style="cursor: pointer;">
+            <h3>資安通報</h3>
+            <p>02-23776418 (台北辦公室)</p>
+            <p>03-4115579 (桃園辦公室)</p>
+        </div>
+        <div class="col-md-3 contact">
+            <a href="mailto:twcert@cert.org.tw">
+                <h3>電子信箱</h3>
+                <p>twcert(at)cert.org.tw</p>
+            </a>
+        </div>
+        <div class="col-md-3 contact light" onclick="javascript: location.href = '/subpages/aboutus/pgp_key.aspx';" style="cursor: pointer;">
+            <h3>PGP KEY</h3>
+            <p>TWCERT/CC PGP Public Key</p>
+            <p>(Key ID : 0x1E9D1F1B)</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+
+            <div class="row">
+                <!-- About -->
+                <div class="col-md-6 md-margin-bottom-40 text-center">
+                    <a href="/Default.aspx"><img id="logo-footer" class="footer-logo" src="assets/img/twcertLogo.png" alt="頁尾Logo" width="200"></a>
+                </div>
+                <!-- End About -->
+
+                <!-- Social Share -->
+                <div class="col-md-6 md-margin-bottom-40">
+                    <!-- <div class="headline"><h2>社群網站</h2></div>
+                    <div class="footer_social">
+                        <ul class="social-icons social-icons-color">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/twcertcc/" class="icon-custom rounded social_facebook" data-toggle="tooltip" data-placement="top" data-original-title="Facebook" title="">facebook</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/channel/UCciZUJ_GR_LqXdQzdRV3dGw" class="icon-custom rounded social_youtube" data-toggle="tooltip" data-placement="top" data-original-title="Youtube" title="">youtube</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://twcertcc.blogspot.tw/" class="icon-custom rounded social_blogger" data-toggle="tooltip" data-placement="top" data-original-title="Blogger" title="">blogger</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/TWCERTCC" class="icon-custom rounded social_twitter" data-toggle="tooltip" data-placement="top" data-original-title="Twitter" title="">twitter</a>
+                            </li>
+                        </ul>
+                    </div> -->
+
+                    <!--<div>
+                        <label class="input">
+                            <i class="icon-append fa fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Email address">
+                            <b class="tooltip tooltip-bottom-right">Needed to verify your account</b>
+                        </label>
+                    </div>-->
+                    <div class="headline"><h2>每月電子報訂閱</h2></div>
+                    <div id="email_subscribe" class="input-group">
+                        <input title="email address" type="text" class="form-control" placeholder="Email address">
+                        <span class="input-group-btn">
+                                <button id="send_subscribe" class="btn-u" type="button">電子報訂閱</button>
+                        </span>
+                    </div>
+                </div>
+                <!-- End Social Share -->
+            </div>
+        </div>
+    </div><!--/footer-->
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Copyright &copy; TWCERT/CC 台灣電腦網路危機處理暨協調中心 1998-2017
+                        <a href="/private_policy.aspx">隱私權政策</a> |
+                        <a href="/term_of_services.aspx">使用說明</a> |
+                        <a href="/website_map.aspx">網站地圖</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div><!--/copyright-->
+</div>
+<div id="modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog  modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">電子報訂閱</h4>
+            </div>
+            <div class="modal-body">
+                <p id="subscribe_result">One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<script type="text/javascript">
+var api = {
+    url: 'http://192.168.1.3'
+};
+</script>
+<!--=== End Footer Version 1 ===-->
+        </div><!--/wrapper-->
+
+        <!-- JS Global Compulsory -->
+        <script src="assets/plugins/jquery/jquery.min.js"></script>
+        <script src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <!-- JS Implementing Plugins -->
+        <script src="assets/plugins/back-to-top.js"></script>
+        <script src="assets/plugins/smoothScroll.js"></script>
+        <script src="assets/plugins/jquery.parallax.js"></script>
+        <!-- JS Page Level -->
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
+
+        <script type="text/javascript">
+            jQuery(document).ready(function () {
+                $("#header_securityReport").addClass('active');
+                App.init();
+                $('#header-custom').removeClass('header-sticky');
+                $('#header-custom').addClass('header-fix-top');
+                $('#header-custom').addClass('header-fixed-shrink');
+            })
+        </script>
+</body>
+</html>

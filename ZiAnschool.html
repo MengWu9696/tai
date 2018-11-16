@@ -1,0 +1,406 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh-TW" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh-TW" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="zh-TW"> <!--<![endif]-->
+<head>
+    <title>TWCERT/CC 台灣電腦網路危機處理暨協調中心</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- CSS Global Compulsory -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="assets/css/headers/header-v6.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="assets/css/theme-colors/twcert-theme.css" id="style_color">
+    <link rel="stylesheet" href="assets/css/theme-skins/dark.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <link href="assets/css/mainStyle.css" rel="stylesheet" />
+    <!--data table-->
+    <link rel="stylesheet" href="assets/plugins/jquery-datatables/jquery.dataTables.min.css">
+    <style>
+    </style>
+</head>
+<body class="header-fixed" style="overflow-x : hidden;">
+
+    <div id="loadingIcon" class="loadingIcon">
+        <i class="fa fa-spinner fa-spin loading-icon"></i>
+    </div>
+
+
+        <div class="wrapper">
+<!--=== Header v6 ===-->
+<div id="header-custom" class="header-v6 header-white-transparent header-sticky ">
+    <!-- Navbar -->
+    <div class="navbar mega-menu" role="navigation">
+        <div class="container">
+            <!-- Topbar -->
+            <ul class="list-inline pull-right hidden-xs hidden-sm">
+                <li class="hoverSelector">
+                    <div class="footer_social">
+                        <ul class="social-icons social-icons-color">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/twcertcc/" class="icon-custom rounded social_facebook" data-toggle="tooltip" data-placement="top" data-original-title="Facebook" title="移至本中心臉書粉絲頁(另開分頁)">facebook</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/channel/UCciZUJ_GR_LqXdQzdRV3dGw" class="icon-custom rounded social_youtube" data-toggle="tooltip" data-placement="top" data-original-title="Youtube" title="移至本中心Youtube影音平台(另開分頁)">youtube</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twcertcc.blogspot.tw/" class="icon-custom rounded social_blogger" data-toggle="tooltip" data-placement="top" data-original-title="Blogger" title="移至本中心部落格(另開分頁)">blogger</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/TWCERTCC" class="icon-custom rounded social_twitter" data-toggle="tooltip" data-placement="top" data-original-title="Twitter" title="移至本中心推特粉絲頁(另開分頁)">twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <!-- End Topbar -->
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="menu-container">
+                 <ul id="header_menu" class="nav navbar-nav">
+                    <li id="header_1" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                           <font style="vertical-align: inherit;">关于我们</font>
+                       </a>
+                            <ul class="dropdown-menu" style="">
+                                <li>
+                                    <a href="ZhongXinbrief.html"><font style="vertical-align: inherit;">中心简介</font></a>
+                                </li>
+                                <li><a href="Huodongnotes.html"><font style="vertical-align: inherit;">活动纪事</font></a>
+                                </li>
+                                <li><a href="PGPKEY.html"><font style="vertical-align: inherit;">PGP KEY</font></a>
+                                </li>
+                                <li><a href="HeZuoparters.html"><font style="vertical-align: inherit;">合作伙伴</font></a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li id="header_2" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <font style="vertical-align: inherit;">资安情资</font>
+                        </a>
+                        <ul class="dropdown-menu" style="">
+                            <li><a href="ZiAnnews.html"><font style="vertical-align: inherit;">资安新闻</font></a>
+                            </li>
+                            <li><a href="HeQinevent.html"><font style="vertical-align: inherit;">骇侵事件</font></a>
+                            </li>
+                            <li><a href="LouDonginfo.html"><font style="vertical-align: inherit;">漏洞资讯</font></a>
+                            </li>
+                            <li><a href="ZIANactivity.html"><font style="vertical-align: inherit;">资安活动</font></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="header_3" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <font style="vertical-align: inherit;">资安通报</font>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="YiBaninform.html"><font style="vertical-align: inherit;">一般通报</font></a>
+                            </li>
+                            <li><a href="JinJieinform.html"><font style="vertical-align: inherit;">进阶通报</font></a>
+                            </li><li><a href="APIinform.html"><font style="vertical-align: inherit;">API通报</font></a>
+                            </li>
+                            <li><a href="ShiYongstruction.html"><font style="vertical-align: inherit;">使用说明及规范</font></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="header_5" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <font style="vertical-align: inherit;">民众服务</font>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="GongKaifile.html"><font style="vertical-align: inherit;">公开文件</font></a>
+                            </li>
+                            <li><a href="ZiAnschool.html"><font style="vertical-align: inherit;">资安学堂</font></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="header_6" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><font style="vertical-align: inherit;">资安资源</font>
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li>
+                            <a href="GuoNeigroup.html"><font style="vertical-align: inherit;">国内CERT组织</font></a>
+                        </li>
+                        <li><a href="GuoJigroup.html"><font style="vertical-align: inherit;">国际CERT组织</font></a>
+                        </li>
+                        <li><a href="WangLusource.html"><font style="vertical-align: inherit;">网路资源</font></a>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- Navbar Brand -->
+                <div class="navbar-brand">
+                    <a href="/Default.aspx">
+                        <img id="default-logo" class="default-logo" src="assets/img/twcertLogo.png" alt="首頁Logo">
+                        <img id="shrink-logo" class="shrink-logo" src="assets/img/twcertLogoB.png" alt="首頁Logo">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <div class="menu-container">
+                    <ul id="header_menu" class="nav navbar-nav">
+
+                        <!-- MENU -->
+
+                    </ul>
+                </div>
+            </div><!--/navbar-collapse-->
+        </div>
+    </div>
+    <!-- End Navbar -->
+</div>
+<!--=== End Header v6 ===-->
+<div class="container">
+
+    <!-- Modal -->
+    <div id="myModal_usage" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">使用方法</h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>1.  請以全半形空白、全半形逗點分隔多個關鍵字。</li>
+                        <li>2.  盡量不要輸入整句句子進行搜尋，可能會減少搜尋到的結果，<br>例如：<br>
+                                (O) 勒索病毒 WannaCry<br>
+                                (X) 一個叫做WannaCry的勒索病毒
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+            <div class="margin-bottom-50"></div>
+            <div class="bg-color-light">
+                <div class="container content-sm">
+                    <!--=== Breadcrumbs ===-->
+                    <div class="breadcrumbs">
+                        <div class="container">
+                            <ul class="pull-left breadcrumb">
+                                <li><a href="Default.html">首頁</a></li><li><a href="#">資安情資</a></li><li class="active">資安活動</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--=== End Breadcrumbs ===-->
+                    <!-- News v3 -->
+                    <div class="news-v3 bg-color-white margin-bottom-30">
+                        <div class="news-v3-in">
+                            <div class="headline-center">
+                                <h2>
+                                    <span class="label rounded-2x label-primary" style="font-size: 24px;"></span>資安學堂
+                                </h2>
+                            </div>
+
+                            <div class="content" style="text-align: left; word-wrap: break-word;">
+                                <table id="security_school_table" class="display" cellspacing="0" width="100%" style="color: black;">
+                                    <thead>
+                                        <tr>
+                                            <th>編號</th>
+                                            <th>日期</th>
+                                            <th>文章標題</th>
+                                            <th>最後更新</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End News v3 -->
+                </div>
+            </div>
+            <!--=== Footer Version 1 ===-->
+<div class="footer-v1">
+    <div class="row">
+        <div class="col-md-3 contact">
+            <h3>聯絡我們</h3>
+            <p>免付費服務電話: 0800-885-066</p>
+            <p>服務電話: 03-4115387</p>
+        </div>
+        <div class="col-md-3 contact light" onclick="javascript: location.href = '/subpages/securityReport/normal.aspx';" style="cursor: pointer;">
+            <h3>資安通報</h3>
+            <p>02-23776418 (台北辦公室)</p>
+            <p>03-4115579 (桃園辦公室)</p>
+        </div>
+        <div class="col-md-3 contact">
+            <a href="mailto:twcert@cert.org.tw">
+                <h3>電子信箱</h3>
+                <p>twcert(at)cert.org.tw</p>
+            </a>
+        </div>
+        <div class="col-md-3 contact light" onclick="javascript: location.href = '/subpages/aboutus/pgp_key.aspx';" style="cursor: pointer;">
+            <h3>PGP KEY</h3>
+            <p>TWCERT/CC PGP Public Key</p>
+            <p>(Key ID : 0x1E9D1F1B)</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+
+            <div class="row">
+                <!-- About -->
+                <div class="col-md-6 md-margin-bottom-40 text-center">
+                    <a href="/Default.aspx"><img id="logo-footer" class="footer-logo" src="assets/img/twcertLogo.png" alt="頁尾Logo" width="200"></a>
+                </div>
+                <!-- End About -->
+
+                <!-- Social Share -->
+                <div class="col-md-6 md-margin-bottom-40">
+                    <!-- <div class="headline"><h2>社群網站</h2></div>
+                    <div class="footer_social">
+                        <ul class="social-icons social-icons-color">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/twcertcc/" class="icon-custom rounded social_facebook" data-toggle="tooltip" data-placement="top" data-original-title="Facebook" title="">facebook</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/channel/UCciZUJ_GR_LqXdQzdRV3dGw" class="icon-custom rounded social_youtube" data-toggle="tooltip" data-placement="top" data-original-title="Youtube" title="">youtube</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://twcertcc.blogspot.tw/" class="icon-custom rounded social_blogger" data-toggle="tooltip" data-placement="top" data-original-title="Blogger" title="">blogger</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/TWCERTCC" class="icon-custom rounded social_twitter" data-toggle="tooltip" data-placement="top" data-original-title="Twitter" title="">twitter</a>
+                            </li>
+                        </ul>
+                    </div> -->
+
+                    <!--<div>
+                        <label class="input">
+                            <i class="icon-append fa fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Email address">
+                            <b class="tooltip tooltip-bottom-right">Needed to verify your account</b>
+                        </label>
+                    </div>-->
+                    <div class="headline"><h2>每月電子報訂閱</h2></div>
+                    <div id="email_subscribe" class="input-group">
+                        <input title="email address" type="text" class="form-control" placeholder="Email address">
+                        <span class="input-group-btn">
+                                <button id="send_subscribe" class="btn-u" type="button">電子報訂閱</button>
+                        </span>
+                    </div>
+                </div>
+                <!-- End Social Share -->
+            </div>
+        </div>
+    </div><!--/footer-->
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Copyright &copy; TWCERT/CC 台灣電腦網路危機處理暨協調中心 1998-2017
+                        <a href="/private_policy.aspx">隱私權政策</a> |
+                        <a href="/term_of_services.aspx">使用說明</a> |
+                        <a href="/website_map.aspx">網站地圖</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div><!--/copyright-->
+</div>
+<div id="modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog  modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">電子報訂閱</h4>
+            </div>
+            <div class="modal-body">
+                <p id="subscribe_result">One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<script type="text/javascript">
+var api = {
+    url: 'http://192.168.1.3'
+};
+</script>
+<!--=== End Footer Version 1 ===-->
+        </div><!--/wrapper-->
+
+        <!-- JS Global Compulsory -->
+        <script src="assets/plugins/jquery/jquery.min.js"></script>
+        <script src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <!-- JS Implementing Plugins -->
+        <script src="assets/plugins/back-to-top.js"></script>
+        <script src="assets/plugins/smoothScroll.js"></script>
+        <script src="assets/plugins/jquery.parallax.js"></script>
+        <!-- JS Customization -->
+        <!-- <script type="text/javascript" src="assets/js/custom.js"></script> -->
+
+        <!-- JS Page Level -->
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+
+        <!-- data table -->
+        <script type="text/javascript" src="assets/plugins/jquery-datatables/jquery.dataTables.min.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function () {
+                $("#header_ServeThePublic").addClass('active');
+                App.init();
+                $('#header-custom').removeClass('header-sticky');
+                $('#header-custom').addClass('header-fix-top');
+                $('#header-custom').addClass('header-fixed-shrink');
+
+            });
+
+        </script>
+        <!--[if lt IE 9]>
+            <script src="../assets/plugins/respond.min.js"></script>
+            <script src="../assets/plugins/html5shiv.min.js"></script>
+            <script src="assets/plugins/placeholder-IE-fixes.js"></script>
+        <![endif]-->
+</body>
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh-TW" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh-TW" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="zh-TW"> <!--<![endif]-->
+<head>
+    <title>TWCERT/CC 台灣電腦網路危機處理暨協調中心</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- CSS Global Compulsory -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="assets/css/headers/header-v6.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="assets/css/theme-colors/twcert-theme.css" id="style_color">
+    <link rel="stylesheet" href="assets/css/theme-skins/dark.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <link href="assets/css/mainStyle.css" rel="stylesheet" />
+    <!--data table-->
+    <link rel="stylesheet" href="assets/plugins/jquery-datatables/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="assets/css/normal.css">
+
+</head>
+<body class="header-fixed" style="overflow-x : hidden;">
+
+    <div id="loadingIcon" class="loadingIcon">
+        <i class="fa fa-spinner fa-spin loading-icon"></i>
+    </div>
+        <div class="wrapper">
+<!--=== Header v6 ===-->
+<div id="header-custom" class="header-v6 header-white-transparent header-sticky ">
+    <!-- Navbar -->
+    <div class="navbar mega-menu" role="navigation">
+        <div class="container">
+            <!-- Topbar -->
+            <ul class="list-inline pull-right hidden-xs hidden-sm">
+                <li class="hoverSelector">
+                    <i class="fa fa-globe"></i>
+                    <a href="#" onclick="lang_change()" title="切換為英文網頁">English</a>
+                    <div class="footer_social">
+                        <ul class="social-icons social-icons-color">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/twcertcc/" class="icon-custom rounded social_facebook" data-toggle="tooltip" data-placement="top" data-original-title="Facebook" title="移至本中心臉書粉絲頁(另開分頁)">facebook</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/channel/UCciZUJ_GR_LqXdQzdRV3dGw" class="icon-custom rounded social_youtube" data-toggle="tooltip" data-placement="top" data-original-title="Youtube" title="移至本中心Youtube影音平台(另開分頁)">youtube</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twcertcc.blogspot.tw/" class="icon-custom rounded social_blogger" data-toggle="tooltip" data-placement="top" data-original-title="Blogger" title="移至本中心部落格(另開分頁)">blogger</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/TWCERTCC" class="icon-custom rounded social_twitter" data-toggle="tooltip" data-placement="top" data-original-title="Twitter" title="移至本中心推特粉絲頁(另開分頁)">twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <!-- End Topbar -->
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="menu-container">
+                <ul id="header_menu" class="nav navbar-nav">
+                    <li id="header_1" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                           <font style="vertical-align: inherit;">关于我们</font>
+                       </a>
+                            <ul class="dropdown-menu" style="">
+                                <li>
+                                    <a href="ZhongXinbrief.html"><font style="vertical-align: inherit;">中心简介</font></a>
+                                </li>
+                                <li><a href="Huodongnotes.html"><font style="vertical-align: inherit;">活动纪事</font></a>
+                                </li>
+                                <li><a href="PGPKEY.html"><font style="vertical-align: inherit;">PGP KEY</font></a>
+                                </li>
+                                <li><a href="HeZuoparters.html"><font style="vertical-align: inherit;">合作伙伴</font></a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li id="header_2" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <font style="vertical-align: inherit;">资安情资</font>
+                        </a>
+                        <ul class="dropdown-menu" style="">
+                            <li><a href="ZiAnnews.html"><font style="vertical-align: inherit;">资安新闻</font></a>
+                            </li>
+                            <li><a href="HeQinevent.html"><font style="vertical-align: inherit;">骇侵事件</font></a>
+                            </li>
+                            <li><a href="LouDonginfo.html"><font style="vertical-align: inherit;">漏洞资讯</font></a>
+                            </li>
+                            <li><a href="ZIANactivity.html"><font style="vertical-align: inherit;">资安活动</font></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="header_3" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <font style="vertical-align: inherit;">资安通报</font>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="YiBaninform.html"><font style="vertical-align: inherit;">一般通报</font></a>
+                            </li>
+                            <li><a href="JinJieinform.html"><font style="vertical-align: inherit;">进阶通报</font></a>
+                            </li><li><a href="APIinform.html"><font style="vertical-align: inherit;">API通报</font></a>
+                            </li>
+                            <li><a href="ShiYongstruction.html"><font style="vertical-align: inherit;">使用说明及规范</font></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="header_5" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <font style="vertical-align: inherit;">民众服务</font>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="GongKaifile.html"><font style="vertical-align: inherit;">公开文件</font></a>
+                            </li>
+                            <li><a href="ZiAnschool.html"><font style="vertical-align: inherit;">资安学堂</font></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="header_6" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><font style="vertical-align: inherit;">资安资源</font>
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li>
+                            <a href="GuoNeigroup.html"><font style="vertical-align: inherit;">国内CERT组织</font></a>
+                        </li>
+                        <li><a href="GuoJigroup.html"><font style="vertical-align: inherit;">国际CERT组织</font></a>
+                        </li>
+                        <li><a href="WangLusource.html"><font style="vertical-align: inherit;">网路资源</font></a>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- Navbar Brand -->
+                <div class="navbar-brand">
+                    <a href="/Default.aspx">
+                        <img id="default-logo" class="default-logo" src="assets/img/twcertLogo.png" alt="首頁Logo">
+                        <img id="shrink-logo" class="shrink-logo" src="assets/img/twcertLogoB.png" alt="首頁Logo">
+                    </a>
+                </div>
+                <!-- End Header Inner Right -->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <div class="menu-container">
+                    <ul id="header_menu" class="nav navbar-nav">
+
+                        <!-- MENU -->
+
+                    </ul>
+                </div>
+            </div><!--/navbar-collapse-->
+        </div>
+    </div>
+    <!-- End Navbar -->
+</div>
+<!--=== End Header v6 ===-->
+<div class="container">
+    <!-- Modal -->
+    <div id="myModal_usage" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">使用方法</h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>1.  請以全半形空白、全半形逗點分隔多個關鍵字。</li>
+                        <li>2.  盡量不要輸入整句句子進行搜尋，可能會減少搜尋到的結果，<br>例如：<br>
+                                (O) 勒索病毒 WannaCry<br>
+                                (X) 一個叫做WannaCry的勒索病毒
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+            <div class="margin-bottom-10 hidden-xs hidden-sm"></div>
+            <div class="bg-color-light">
+                <div class="container content-sm">
+                    <!--=== Breadcrumbs ===-->
+                    <div class="breadcrumbs">
+                        <div class="container">
+                            <ul class="pull-left breadcrumb">
+                                 <li><a href="Default.html">首頁</a></li><li><a href="#">資安情資</a></li><li class="active">資安活動</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--=== End Breadcrumbs ===-->
+                    <div class="headline-center" style="background: #fff;padding: 65px 3%;">
+                        <h2 id="page_title" style=" margin-bottom:60px;">进阶通報</h2>
+                        <!-- Tab v2 -->
+                        <div class="tab-v2 div_center">
+                            <div class="tab-content">
+                                <ul class="nav nav-tabs">
+                                    <li class="step1 active"><a class="tab-1" href="#discuss-1" data-toggle="tab">
+                                        <strong>步驟 1</strong>
+                                        <span class="g-color-white-darker">填寫資安事故基本資料</span>
+                                    </a>
+                                    </li>
+                                    <li class="step2"><a class="tab-2" href="#concept-1" data-toggle="tab">
+                                        <strong>步驟 2</strong>
+                                        <span class="g-color-white-darker">評估事件影響等級</span>
+                                    </a>
+                                    </li>
+                                    <li class="step3"><a class="tab-3" href="#modeling-1" data-toggle="tab">
+                                        <strong>步驟 3</strong>
+                                        <span class="g-color-white-darker">資安事故發生過程</span>
+                                    </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Tab v2 -->
+
+                        <!--============================ step1 ============================-->
+                        <div id="step1" class="row">
+                                <div class="form-horizontal">
+                                    <div class="headline"><h3>步驟 1：填寫資安事故基本資料</h3></div>
+                                    <!-- for start-->
+                                    <div class="text-left">
+                                        <div class="headline"><h3>基本資料</h3></div>
+                                        <div class="form-group">
+                                            <label for="contact_pu" class="col-md-3 col-lg-2 control-label">通報人（機關）：</label>
+                                            <div class="col-md-9 col-lg-10">
+                                                <input id="contact_pu" type="text" class="form-control" placeholder="通報人（機關）">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phone" class="col-md-3 col-lg-2 control-label">聯絡電話：</label>
+                                            <div class="col-md-9 col-lg-10">
+                                                <input id="phone" type="text" class="form-control" placeholder="聯絡電話">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email" class="col-md-3 col-lg-2 control-label">電子郵件：</label>
+                                            <div class="col-md-9 col-lg-10">
+                                                <input id="email" type="text" class="form-control" placeholder="電子郵件">
+                                            </div>
+                                        </div>
+
+                                        <br />
+
+                                        <!-- -->
+                                        <div class="headline"><h3>受影響設備資料(選填)</h3></div>
+                                        <div class="form-group">
+                                            <label for="ip" class="col-md-3 col-lg-2 control-label">IP位置：</label>
+
+                                            <div class="col-md-9 col-lg-10">
+                                                <div id="ip_div">
+                                                    <!-- <div>
+                                                        <input id="ip" type="text" class="form-control" style="margin-top: 5px;" placeholder="例：127.0.0.1">
+                                                        <span class="input-group-btn">
+                                                            <button class="btn btn-danger" type="button" style="float: right;margin-top: -34px;">Remove</button>
+                                                        </span>
+                                                    </div> -->
+                                                </div>
+                                                <button id="addip" class="btn-u btn-u-orange" style="margin-top: 5px;" type="button">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="web_url" class="col-md-3 col-lg-2 control-label">網域名稱：</label>
+                                            <div class="col-md-9 col-lg-10">
+                                                <div id="web_url_div">
+
+                                                </div>
+                                                <button id="addweb_url" class="btn-u btn-u-orange" style="margin-top: 5px;" type="button">+</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-md-3 col-lg-2 control-label">事件發生日期：</label>
+                                            <div class="col-md-9 col-lg-10">
+                                                <input id="new_discover_date" type="datetime-local" class="form-control" placeholder="事件發生日期" step="1">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="model" class="col-md-3 col-lg-2 control-label">設備廠牌、型號：</label>
+                                            <div class="col-md-9 col-lg-10">
+                                                <input id="model" type="text" class="form-control" placeholder="設備廠牌、型號">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group margin-bottom-40">
+                                            <label class="col-md-3 col-lg-2 control-label">已裝置之安全機制：</label>
+                                            <div class="col-md-9 col-lg-10">
+                                                <div class="form-group row">
+                                                    <label for="fire_wall" class="col-md-3 control-label">防火牆：</label>
+                                                    <div class="col-md-9">
+                                                        <input id="fire_wall" type="text" class="form-control" placeholder="防火牆">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="anti_virus" class="col-md-3 control-label">防毒軟體：</label>
+                                                    <div class="col-md-9">
+                                                        <input id="anti_virus" type="text" class="form-control" placeholder="防毒軟體">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="detected_system" class="col-md-3 control-label">入侵偵測系統：</label>
+                                                    <div class="col-md-9">
+                                                        <input id="detected_system" type="text" class="form-control" placeholder="入侵偵測系統">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="defend_system" class="col-md-3 control-label">入侵防禦系統：</label>
+                                                    <div class="col-md-9">
+                                                        <input id="defend_system" type="text" class="form-control" placeholder="入侵防禦系統">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="others" class="col-md-3 control-label">其他：</label>
+                                                    <div class="col-md-9">
+                                                        <input id="others" type="text" class="form-control" placeholder="其他">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- End for start-->
+                                    <br />
+                                    <button id="step1_next" class="btn btn-u btn-u-orange" type="button" style="border-radius: 15px; padding: 10px 40px; font-size: 20px;">下一步</button>
+                                    <br /><br />
+                                </div>
+                        </div>
+                        <!--============================ end step1 ============================-->
+                        <!--============================ step2 ============================-->
+                        <div id="step2" class="row">
+                            <div class="form-horizontal">
+                                <div class="headline"><h3>步驟 2：評估事件影響等級</h3></div>
+                                <div class="text-left">
+                                    <div class="form-group">
+                                        <label for="confidential_impact" class="col-md-2 control-label">機密性衝擊：</label>
+                                        <div class="col-md-10">
+                                            <select id="confidential_impact" class="form-control">
+                                                <!-- <option value="4">國家機密資料遭洩漏</option>
+                                                <option value="3">密級或敏感業務資料遭洩漏</option>
+                                                <option value="2">非屬密級或敏感之核心業務資料遭洩漏</option>
+                                                <option value="1">非核心業務資料遭洩漏</option>
+                                                <option value="0">無公務資料遭洩漏</option> -->
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="integrity_impact" class="col-md-2 control-label">完整性衝擊：</label>
+                                        <div class="col-md-10">
+                                            <select id="integrity_impact" class="form-control">
+                                                <!-- <option value="4">國家重要資訊基礎建設系統或資料遭竄改</option>
+                                                <option value="3">核心業務系統或資料遭嚴重竄改</option>
+                                                <option value="2">核心業務系統或資料遭輕微竄改</option>
+                                                <option value="1">非核心業務系統或資料遭竄改</option>
+                                                <option value="0">無業務系統或資料遭竄改</option> -->
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="usability_impact" class="col-md-2 control-label">可用性衝擊：</label>
+                                        <div class="col-md-10">
+                                            <select id="usability_impact" class="form-control">
+                                                <!-- <option value="4">國家重要資訊基礎建設運作遭影響或系統停頓，無法於可容忍中斷時間內回復正常運作</option>
+                                                <option value="3">核心業務運作遭影響或系統停頓，無法於可容忍中斷時間內回復正常運作</option>
+                                                <option value="2">核心業務運作遭影響或系統效率降低，於可容忍中斷時間內回復正常運作</option>
+                                                <option value="1">非核心業務運作遭影響或短暫停頓</option>
+                                                <option value="0">無業務運作受影響</option> -->
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cross_unit_impact" class="col-md-2 control-label">跨單位衝擊：</label>
+                                        <div class="col-md-10">
+                                            <select id="cross_unit_impact" class="form-control">
+                                                <!-- <option value="4">衝擊之單位影響國家重要資訊基礎建設系統</option>
+                                                <option value="3">衝擊之單位影響嚴重核心業務系統</option>
+                                                <option value="2">衝擊之單位影響輕微核心業務系統</option>
+                                                <option value="1">衝擊之單位影響非核心業務系統</option>
+                                                <option value="0">無跨單位受影響</option> -->
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <br />
+                                <button id="step2_next" class="btn btn-u btn-u-orange" type="button" style="    border-radius: 15px; padding: 10px 40px; font-size: 20px;">下一步</button>
+                                <br /><br />
+                            </div>
+                        </div>
+                        <!--============================ end step2 ============================-->
+                        <!--============================ step3 ============================-->
+                        <div id="step3" class="row">
+                            <div class="form-horizontal">
+                                <div class="headline"><h3>步驟 3：資安事故發生過程</h3></div>
+                                <div class="text-left">
+                                    <div class="form-group">
+                                        <label for="event_classification" class="col-md-2 control-label">事件分類：</label>
+                                        <div class="col-md-10">
+                                            <select id="event_classification" class="form-control">
+                                                <!-- <option value="000">未知</option>
+                                                <option value="A01">資源耗損-阻斷服務攻擊</option>
+                                                <option value="A02">資源耗損-分散式阻斷服務攻擊</option>
+                                                <option value="A03">資源耗損-效能降低</option>
+                                                <option value="A04">資源耗損-其他</option>
+
+                                                <option value="B01">網頁-隱碼攻擊</option>
+                                                <option value="B02">網頁-跨網站指令碼攻擊</option>
+                                                <option value="B03">網頁-惡意檔案執行</option>
+                                                <option value="B04">網頁-不安全的物件參考</option>
+                                                <option value="B05">網頁-跨網站的偽造要求</option>
+                                                <option value="B06">網頁-資訊揭露與不適當錯誤處置</option>
+                                                <option value="B07">網頁-遭破壞的鑑別與連線管理</option>
+                                                <option value="B08">網頁-不安全的密碼儲存器</option>
+                                                <option value="B09">網頁-不安全的通訊</option>
+                                                <option value="B10">網頁-疏於限制URL存取</option>
+                                                <option value="B11">網頁-勒索軟體</option>
+                                                <option value="B12">網頁-其他</option>
+
+                                                <option value="C01">電子郵件/釣魚郵件-勒索軟體</option>
+                                                <option value="C02">電子郵件/釣魚郵件-其他</option>
+
+                                                <option value="D01">可卸除式裝置-其他</option>
+
+                                                <option value="E01">偽冒/欺騙-其他</option>
+
+                                                <option value="F01">不正當使用-其他</option>
+                                                <option value="G01">設備遺失/遭竊-其他</option>
+                                                <option value="H01">社交工程-其他</option>
+                                                <option value="I00">其他</option> -->
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="event_description" class="col-md-2 control-label">事件說明：</label>
+                                        <div class="col-md-10">
+                                            <textarea id="event_description" class="form-control" rows="7"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contingency_measures" class="col-md-2 control-label">應變措施：</label>
+                                        <div class="col-md-10">
+                                            <textarea id="contingency_measures" class="form-control" rows="7"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <br />
+                                <button id="step3_finish" class="btn btn-u btn-u-orange" type="button" style="    border-radius: 15px; padding: 10px 40px; font-size: 20px;">送出</button>
+                                <br /><br />
+                            </div>
+                        </div><!-- end step1 -->
+                        <!--============================ end step3 ============================-->
+
+                    </div>
+                </div>
+            </div>
+            <!--=== Footer Version 1 ===-->
+<div class="footer-v1">
+    <div class="row">
+        <div class="col-md-3 contact">
+            <h3>聯絡我們</h3>
+            <p>免付費服務電話: 0800-885-066</p>
+            <p>服務電話: 03-4115387</p>
+        </div>
+        <div class="col-md-3 contact light" onclick="javascript: location.href = '/subpages/securityReport/normal.aspx';" style="cursor: pointer;">
+            <h3>資安通報</h3>
+            <p>02-23776418 (台北辦公室)</p>
+            <p>03-4115579 (桃園辦公室)</p>
+        </div>
+        <div class="col-md-3 contact">
+            <a href="mailto:twcert@cert.org.tw">
+                <h3>電子信箱</h3>
+                <p>twcert(at)cert.org.tw</p>
+            </a>
+        </div>
+        <div class="col-md-3 contact light" onclick="javascript: location.href = '/subpages/aboutus/pgp_key.aspx';" style="cursor: pointer;">
+            <h3>PGP KEY</h3>
+            <p>TWCERT/CC PGP Public Key</p>
+            <p>(Key ID : 0x1E9D1F1B)</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+
+            <div class="row">
+                <!-- About -->
+                <div class="col-md-6 md-margin-bottom-40 text-center">
+                    <a href="/Default.aspx"><img id="logo-footer" class="footer-logo" src="assets/img/twcertLogo.png" alt="頁尾Logo" width="200"></a>
+                </div>
+                <!-- End About -->
+
+                <!-- Social Share -->
+                <div class="col-md-6 md-margin-bottom-40">
+                    <!-- <div class="headline"><h2>社群網站</h2></div>
+                    <div class="footer_social">
+                        <ul class="social-icons social-icons-color">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/twcertcc/" class="icon-custom rounded social_facebook" data-toggle="tooltip" data-placement="top" data-original-title="Facebook" title="">facebook</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/channel/UCciZUJ_GR_LqXdQzdRV3dGw" class="icon-custom rounded social_youtube" data-toggle="tooltip" data-placement="top" data-original-title="Youtube" title="">youtube</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://twcertcc.blogspot.tw/" class="icon-custom rounded social_blogger" data-toggle="tooltip" data-placement="top" data-original-title="Blogger" title="">blogger</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/TWCERTCC" class="icon-custom rounded social_twitter" data-toggle="tooltip" data-placement="top" data-original-title="Twitter" title="">twitter</a>
+                            </li>
+                        </ul>
+                    </div> -->
+
+                    <!--<div>
+                        <label class="input">
+                            <i class="icon-append fa fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Email address">
+                            <b class="tooltip tooltip-bottom-right">Needed to verify your account</b>
+                        </label>
+                    </div>-->
+                    <div class="headline"><h2>每月電子報訂閱</h2></div>
+                    <div id="email_subscribe" class="input-group">
+                        <input title="email address" type="text" class="form-control" placeholder="Email address">
+                        <span class="input-group-btn">
+                                <button id="send_subscribe" class="btn-u" type="button">電子報訂閱</button>
+                        </span>
+                    </div>
+                </div>
+                <!-- End Social Share -->
+            </div>
+        </div>
+    </div><!--/footer-->
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Copyright &copy; TWCERT/CC 台灣電腦網路危機處理暨協調中心 1998-2017
+                        <a href="/private_policy.aspx">隱私權政策</a> |
+                        <a href="/term_of_services.aspx">使用說明</a> |
+                        <a href="/website_map.aspx">網站地圖</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div><!--/copyright-->
+</div>
+<div id="modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog  modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">電子報訂閱</h4>
+            </div>
+            <div class="modal-body">
+                <p id="subscribe_result">One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<script type="text/javascript">
+var api = {
+    url: 'http://192.168.1.3'
+};
+</script>
+<!--=== End Footer Version 1 ===-->
+        </div><!--/wrapper-->
+
+        <!-- JS Global Compulsory -->
+        <script src="assets/plugins/jquery/jquery.min.js"></script>
+        <script src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <!-- JS Implementing Plugins -->
+        <script src="assets/plugins/back-to-top.js"></script>
+        <script src="assets/plugins/smoothScroll.js"></script>
+        <script src="assets/plugins/jquery.parallax.js"></script>
+        <!-- JS Page Level -->
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script type="text/javascript" src="assets/js/app.js?20161219"></script>
+        <script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
+        <!-- data table -->
+        <script type="text/javascript" src="assets/plugins/jquery-datatables/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="assets/js/moment.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+        <script type="text/javascript" src="assets/js/underscore-min.js"></script>
+
+        <script type="text/javascript">
+            jQuery(document).ready(function () {
+                $("#header_aboutus").addClass('active');
+                App.init();
+                $('#header-custom').removeClass('header-sticky');
+                $('#header-custom').addClass('header-fix-top');
+                $('#header-custom').addClass('header-fixed-shrink');
+            });
+        </script>
+</body>
+</html>

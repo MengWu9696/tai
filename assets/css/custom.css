@@ -1,0 +1,15 @@
+/* Add here all your css styles (customizations) */
+/*header*/
+.header-fix-top {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    position: fixed;
+}
+
+
+iframe {
+    border-width: 0px !important;
+}
